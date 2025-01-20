@@ -1,0 +1,112 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fed8b1;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+  color: white;
+}
+
+h2 {
+  margin: 10px 0;
+  color: black;
+}
+
+p {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.login-container,
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-box,
+.notes-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #666;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: #ffc078;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.logout-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.notes-display {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.note {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  word-wrap: break-word;
+  color: black;
+  font-size: 1.2rem;
+  position: relative;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(-3deg);
+}
+
+.note:nth-child(2n) {
+  transform: rotate(3deg);
+  margin-left: -50px; /* Overlapping effect */
+  margin-top: 20px;
+}
+
+.note:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
